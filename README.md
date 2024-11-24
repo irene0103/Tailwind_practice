@@ -1,5 +1,5 @@
 # 台灣天氣查詢  
-[專案連結] (https://irene0103.github.io/Tailwind_practice/) 
+[專案連結](https://irene0103.github.io/Tailwind_practice/) 
 
 這是一個使用 Tailwind CSS 切版的單頁式網站專案，具備響應式設計（RWD），適合各種裝置尺寸瀏覽。  
 
