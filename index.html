@@ -7,15 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="flex justify-between items-center bg-[#1A4147] px-5 py-4">
+    <header
+      class="fixed w-full z-50 flex justify-between items-center bg-[#1A4147] px-5 py-4"
+    >
       <div class="flex items-center">
         <img src="images/logo.webp" alt="Logo" class="w-32 md:w-auto" />
       </div>
       <nav class="text-white hidden md:flex">
-        <a href="#" class="ml-10">首頁</a>
-        <a href="#" class="ml-10">自由潛水課程</a>
-        <a href="#" class="ml-10">水肺潛水課程</a>
-        <a href="#" class="ml-10">部落格</a>
+        <a href="index.html" class="ml-10">首頁</a>
+        <a href="blog.html" class="ml-10">自由潛水課程</a>
+        <a href="blog.html" class="ml-10">水肺潛水課程</a>
+        <a href="blog.html" class="ml-10">部落格</a>
       </nav>
       <div class="flex md:hidden">
         <button id="menu-toggle" class="text-white focus:outline-none">
@@ -37,99 +39,224 @@
       </div>
     </header>
 
-    <div id="mobile-menu" class="md:hidden hidden bg-[#ffffff] text-Slate">
-      <a href="#" class="block px-4 py-2">首頁</a>
-      <a href="#" class="block px-4 py-2">自由潛水課程</a>
-      <a href="#" class="block px-4 py-2">水肺潛水課程</a>
-      <a href="#" class="block px-4 py-2">部落格</a>
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden bg-[#ffffff] text-Slate pt-20"
+    >
+      <a href="index.html" class="block px-4 py-2 hover:bg-[#f1f1f1]">首頁</a>
+      <a href="blog.html" class="block px-4 py-2 hover:bg-[#f1f1f1]"
+        >自由潛水課程</a
+      >
+      <a href="blog.html" class="block px-4 py-2 hover:bg-[#f1f1f1]"
+        >水肺潛水課程</a
+      >
+      <a href="blog.html" class="block px-4 py-2 hover:bg-[#f1f1f1]">部落格</a>
     </div>
-    <main class="container mx-auto">
-      <section>
-        <div class="relative text-center text-white">
-          <img class="w-full" src="images/banner.webp" alt="" />
-          <h1 class="absolute inset-x-0 bottom-12 text-5xl">潛水旅遊攻略</h1>
-          <p class="absolute inset-x-0 bottom-3 text-xl">
-            探索潛水＆自由行旅遊靈感
-          </p>
+    <main class="mx-auto">
+      <section class="banner">
+        <img class="w-full" src="images/index-banner.png" alt="banner" />
+      </section>
+      <section class="container mx-auto text-center">
+        <h1 class="text-4xl pt-10">一起探索能見度30米的海底</h1>
+        <p class="text-xl pt-5">慢慢潛旅，讓我們帶你走趟深度旅行</p>
+        <div
+          class="article flex flex-col-reverse justify-center items-center mx-auto px-5 md:flex-row mt-20"
+        >
+          <!-- 文章內容 -->
+          <div class="article-content text-left mt-10 w-full md:w-2/5 pr-10">
+            <h2 class="text-4xl">Koh ocean 嶼海自由潛水</h2>
+            <p class="text-l pt-5">
+              Kohocean
+              是一間結合自由潛水、水肺潛水的工作室，提供自由潛水教學、考照、住宿、行程與各種探索活動
+              <br />我們想打造一個海人們能盡情享受大自然美麗與海底自由的地方，既使你生活在都市，也能在這裡有一個溫暖且放鬆的空間
+            </p>
+            <ul class="mt-10 list-disc pl-5">
+              <li>綠島自由潛水課程 / 體驗</li>
+              <li>綠島水肺潛水課程 / 體驗</li>
+              <li>綠島導潛 Fun dive / 訓練潛</li>
+              <li>課程行事曆</li>
+              <li>潛水裝備租借</li>
+              <li>綠島住宿行程</li>
+            </ul>
+          </div>
+
+          <!-- 文章圖片 -->
+          <div class="article-image w-full md:w-2/5">
+            <img src="./images/sce1.png" alt="diving" />
+          </div>
         </div>
-        <div class="md:container md:mx-auto my-10">
-          <!-- 第一組 -->
-          <div class="flex flex-col md:flex-row px-5 md:px-20">
-            <div class="w-full md:w-1/3">
-              <img class="w-full" src="images/ow.webp" alt="" />
-            </div>
-            <div class="w-full md:w-2/3 md:ml-10 mt-5 md:mt-0">
-              <div class="flex items-center">
-                <img class="w-10 rounded-full" src="images/nora.webp" alt="" />
-                <div class="mx-3">
-                  <p>Nora Chen</p>
-                  <p>2月3日</p>
-                </div>
-              </div>
-              <h2 class="text-3xl mt-5">
-                【2024 綠島潛水】潛點推薦 / 浮潛 / 自潛 / 水肺潛水懶人包
-              </h2>
-              <p class="mt-5">
-                被譽為世界級潛水勝地的綠島，豐富的海底地形以及溫暖黑潮流經，形成壯觀的海底生態景緻，綠島以擁有能見度30米以上的玻璃海聞名，陽光灑落在五顏六色的珊瑚礁上！無論是潛水或浮潛，一生絕對要來綠島一次！
-                今天來跟大家介紹綠島有哪些推薦潛點、潛水行程以及注意事項～
-                綠島潛水地圖...
-              </p>
-            </div>
-          </div>
+        <div class="free-diving mt-20">
+          <h2 class="text-4xl text-center">自由潛水課程</h2>
+          <p class="text-xl pt-2 text-center">Free Diving</p>
+          <hr class="my-5 mx-auto border-t-4 border-black w-10" />
 
-          <!-- 第二組 -->
-          <div class="flex flex-col md:flex-row px-5 md:px-20 mt-10">
-            <div class="w-full md:w-1/3">
-              <img class="w-full" src="images/aida.webp" alt="" />
-            </div>
-            <div class="w-full md:w-2/3 md:ml-10 mt-5 md:mt-0">
-              <div class="flex items-center">
-                <img class="w-10 rounded-full" src="images/nora.webp" alt="" />
-                <div class="mx-3">
-                  <p>Nora Chen</p>
-                  <p>2月3日</p>
-                </div>
+          <!-- Diving List -->
+          <div class="diving-list flex flex-wrap justify-center">
+            <!-- Diving Item -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img class="w-full" src="./images/體驗自潛.png" alt="diving" />
               </div>
-              <h2 class="text-3xl mt-5">
-                【2024自由潛水考照】初學者的自潛常見問題 Q&A
-              </h2>
-              <p class="mt-5">
-                ：「想學潛水會推薦自潛還是水肺呢？」
-                ：「不會游泳，可以學潛水嗎？」
-                ：「AIDA2要閉氣2分鐘，沒辦法閉那久怎麼辦？」
-                常常在IG或Line收到關於自由潛水的疑問，今天整理了一些自由潛水常見問題，希望能夠幫助想接觸大海的人更加了解自由潛水~~
-                Q1...
-              </p>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">體驗自潛</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  適合對於自由潛水有興趣，時間有限想初步認識的人，附水底攝影
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
             </div>
-          </div>
 
-          <!-- 第三組 -->
-          <div class="flex flex-col md:flex-row px-5 md:px-20 mt-10">
-            <div class="w-full md:w-1/3">
-              <img class="w-full" src="images/diving_spot.webp" alt="" />
-            </div>
-            <div class="w-full md:w-2/3 md:ml-10 mt-5 md:mt-0">
-              <div class="flex items-center">
-                <img class="w-10 rounded-full" src="images/nora.webp" alt="" />
-                <div class="mx-3">
-                  <p>Nora Chen</p>
-                  <p>2月3日</p>
-                </div>
+            <!-- AIDA1 -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img src="./images/aida1.png" alt="diving" />
               </div>
-              <h2 class="text-3xl mt-5">
-                【2024綠島潛水】6個綠島必去潛點指南，自由潛水打卡推薦！
-              </h2>
-              <p class="mt-5">
-                綠島被譽為全球百大潛點，去綠島絕對不能錯過海裡豐富的生態資源，出發前可以先看看有哪些自由潛水、水肺潛水都推薦的潛點
-                綠島由於黑潮潮流經，水中雜質少，能見度平均是30米以上，成群熱帶魚與珊瑚礁地形，更讓綠島被許多潛水員列入人生必潛的勝地之一
-                ➤ 預訂綠島自由潛水導潛...
-              </p>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">AIDA1</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  一天課程帶你了解基本知識與入門技巧，適合想了解基礎自由潛水的人
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
+            </div>
+
+            <!-- AIDA2 -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img src="./images/aida2.png" alt="diving" />
+              </div>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">AIDA2</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  自由潛水的入門課程，課程中需掌握理論學科，通過平靜海域及開放水域課程
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
+            </div>
+
+            <!-- Fun Dive -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img src="./images/ow-fundive.png" alt="diving" />
+              </div>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">Fun dive 導潛&訓練潛</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  適合已經有潛水證照，想提升自由潛水技巧或放鬆探索綠島潛點的人
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="ow mt-20">
+          <h2 class="text-4xl text-center">水肺潛水課程</h2>
+          <p class="text-xl pt-2 text-center">​​Scuba Diving</p>
+          <hr class="my-5 mx-auto border-t-4 border-black w-10" />
+
+          <!-- Diving List -->
+          <div class="diving-list flex flex-wrap justify-center">
+            <!-- Diving Item -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img class="w-full" src="./images/水肺.png" alt="diving" />
+              </div>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">體驗潛水</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  提供教練1對1教學，與水底攝影，適合沒有水肺潛水證照，想放鬆盡情享受大海的人
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
+            </div>
+
+            <!-- OW -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img src="./images/ow.png" alt="diving" />
+              </div>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">Open water</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  揹負氣瓶，課程包含理論學科與海洋實習，體驗無重力在海底無拘束的悠游的感覺
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
+            </div>
+
+            <!-- AOW -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img src="./images/aow.png" alt="diving" />
+              </div>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">Advanced open water</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  進階水肺潛水課程，提供更紮實的潛水技巧與知識，適合想要提升水肺潛水技巧的你
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
+            </div>
+
+            <!-- Fun Dive -->
+            <div
+              class="diving-item flex flex-col justify-center items-center w-full sm:w-1/2 md:w-1/4 p-4"
+            >
+              <div class="diving-item-image">
+                <img src="./images/ow-fundive.png" alt="diving" />
+              </div>
+              <div class="diving-item-content text-center">
+                <h3 class="text-2xl pt-5">Fun dive</h3>
+                <p class="text-l px-8 py-4 text-gray-400">
+                  已經有潛水證照，適合想優游綠島各潛點、探索生態，放鬆享受海底的潛水員
+                </p>
+                <button class="bg-sky-300 rounded-3xl px-5 py-2">
+                  詳細瞭解
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact my-20 px-10">
+          <h2 class="text-4xl text-center">聯繫我們</h2>
+          <p class="text-xl pt-2 text-center">Contact</p>
+          <hr class="my-5 mx-auto border-t-4 border-black w-10" />
+          <p class="text-xl pt-2 text-center">
+            想了解更多資訊包含開課日期、綠島自由潛水推薦潛點，歡迎透過LINE與我們聯絡！
+          </p>
         </div>
       </section>
     </main>
-    <footer class="container mx-auto text-center">
+
+    <footer class="mx-auto text-center bg-slate-100 py-5">
       <p>地址：台東縣綠島鄉公館村5鄰16號</p>
       <p>Copyright 2021 © Koh ocean in greenisland</p>
     </footer>
